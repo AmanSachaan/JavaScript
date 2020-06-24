@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+      <title>
+          Home Page
+      </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script type="text/javascript" src="tabs.js"></script>
+  </head>
+  <body>
+    
+    <button class="tablink" onclick="openPage('home',this)" id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openPage('about_me',this)" >About me</button>
+    <button class="tablink" onclick="openPage('contact_me',this)">Contact me  </button>
+    <button class="tablink" onclick="openPage('gallery',this)" >Gallery</button>
+  
+    <div id="home" class="tabcontent">
+        <h2 align='center'>This is My Website</h2>
+
+        <h2 align='center'><i> I am Aman Sachaan.</i></h2>
+        <h2 align='center'><i>I have graduated from GRIET</i></h2>
+    </div>
+    <div id="about_me" class="tabcontent">
+        <h3>About Me</h3>
+        <h4>Introduction</h4>
+        <p class="indentation">My name is Aman Sachaan. I am currently working as a Full Stack Developer in Zemoso Technologies, Hyderabad.</p>
+        <h4>Technical Skills</h4>
+        <p>
+          <ul>
+            <li>Languages Known : C, C++, Java</li>
+            <li>SQl</li>
+            <li>Html, Css and JavaScript</li>
+            <li>Operating System worked on : Windows, Linux</li>
+
+          </ul>
+        </p>
+        
+            
+        <h4>Personal details</h4>
+      <p>
+          <ul>
+            <li>Date of Birth : 30/11/1998</li>
+            <li>Place of Birth : Armoor, Telanagana</li>
+            <li>Blood group : O+</li>
+
+          </ul>
+        </p>
+    </div>
+    <div id="contact_me" class="tabcontent">
+        <h3>Fill the form to Contact me</h3>
+        <div class="container">
+            <form onsubmit="alertFunction(firstname,whatsappNo,emailAddress)">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname"  required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" >
+
+                <label for="whatsappNo">Phone Number</label>
+                <input type="text" id="whatsappNo" name="whatsappNo" required>
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="emailAddress" requisred>
+                 <input type="submit" value="Submit">
+               
+            </form>
+        </div>
+    </div>
+    <div id="gallery" class="tabcontent">
+            <h1>My Gallery</h1>
+            <p></p>
+        <div class="row">
+            <div class="column">
+                <img src="1.jpeg">
+               <img src="2.jpeg">
+            </div>
+            <div class="column">
+                   <img src="3.jpeg">
+               <img src="4.jpeg">
+            </div>
+            <div class="column">
+                  <img src="5.jpeg">
+               <img src="5.jpeg">
+            </div>
+        </div>
+    </div>
+    <script>document.getElementById("defaultOpen").click();</script>
+  </body>
+</html>
